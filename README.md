@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Pre-requisits
+
+- Get [DevContainers](https://code.visualstudio.com/docs/devcontainers/containers) for Visual Code
+
+## FrontEnd
+
+- Material Mui: Check [docs](https://mui.com/material-ui/getting-started/) 
+
 ## Available Scripts
 
 In the project directory, you can run:
