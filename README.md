@@ -6,9 +6,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Get [DevContainers](https://code.visualstudio.com/docs/devcontainers/containers) for Visual Code
 
+## GitFlow
+
+Using gitflow for faster coding (Stop worrying about) flows 
+
+- https://danielkummer.github.io/git-flow-cheatsheet/
+
 ## FrontEnd
 
-- Material Mui: Check [docs](https://mui.com/material-ui/getting-started/) 
+- Material Mui: Check [docs](https://mui.com/material-ui/getting-started/)
 
 ### Available Scripts
 
@@ -18,7 +24,7 @@ In the project directory, you can run:
 
 Install node modules before starting
 
-#### `npm start`
+#### `npm run start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -26,7 +32,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+##### Dev Container Specific
+
+For DevContainer to reload we set flag ``WATCHPACK_POLLING=true``
+
+- https://stackoverflow.com/questions/72023425/my-react-18-app-does-not-reload-automatically-i-try-to-click-on-the-create-new-p
+- https://stackoverflow.com/questions/67857460/how-to-setup-hot-reload-in-react-js-using-vs-code-devcontainers
+
+#### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
