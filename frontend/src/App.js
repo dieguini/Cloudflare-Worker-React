@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box, Button, Container, Stack, Typography } from '@mui/material';
+import AccessibleForwardIcon from '@mui/icons-material/AccessibleForward';
+
+import Sidebar from './components/Sidebar'
+import Feed from './components/Feed'
+import Rigthbar from './components/Rigthbar'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload asdasdsa.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // The Basics
+
+    // <div className="App">
+    //   <Button 
+    //   startIcon={<AccessibleForwardIcon />}
+    //   variant="contained">Hello world</Button>
+
+    //   <Typography variant="h1" component="h2">
+    //     h1. Heading
+    //   </Typography>
+    // </div>
+    <div>
+
+      <Container sx={{backgroundColor:"red"}}>
+        <div>dasasd</div>
+        <Sidebar />
+        <Feed />
+        <Rigthbar />
+      </Container>
+
+      <Box>
+        {/* navbar */}
+        <Stack direction={'row'} spacing={2} justifyContent={'center'}>
+          <Sidebar />
+          <Feed />
+          <Rigthbar />
+        </Stack>
+      </Box>
     </div>
   );
 }
